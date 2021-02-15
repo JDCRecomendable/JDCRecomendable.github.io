@@ -41,7 +41,8 @@
             .text-intro { font-size: 5em; }
             .text-subintro { font-size: 2.5em; }
             .text-thoughts { font-family: serif; font-size: 2.4em; min-height: 10em; }
-            .scroll-down-icon { position: absolute; bottom: 8px; font-size: 3em; }
+            .scroll-down-icon-mobile { position: relative; font-size: 3em; }
+            .scroll-down-icon-desktop { position: absolute; bottom: 8px; font-size: 3em; }
             .smooth-transition { transition: 0.3s; }
             p { margin-bottom: 2em; }
         </style>
@@ -87,8 +88,12 @@
                     <span class="text-subintro font-weight-bolder"><strong>I'm Jared Daniel Recomendable.</strong></span>
                     <br><br>
                     <h3>I'm a student.</h3>
+                    <br><br><br>
+                    <a class="scroll-down-icon-mobile no-outline d-block d-md-none" href="#my-purpose">
+                        <i class="fa fa-chevron-down text-white"></i>
+                    </a>
                 </div>
-                <a class="scroll-down-icon no-outline" href="#my-purpose">
+                <a class="scroll-down-icon-desktop no-outline d-none d-md-block" href="#my-purpose">
                     <i class="fa fa-chevron-down text-white"></i>
                 </a>
             </div>
@@ -364,7 +369,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script>
-            document.querySelectorAll('a.navbar-brand, a.nav-link, a.scroll-down-icon').forEach(anchor => {
+            document.querySelectorAll('a.navbar-brand, a.nav-link, a.scroll-down-icon-mobile, a.scroll-down-icon-desktop').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
 
