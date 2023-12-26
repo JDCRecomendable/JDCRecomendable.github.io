@@ -1,451 +1,447 @@
 <!DOCTYPE html>
 <!-- Copyright (c) 2019-2021 Jared Daniel Carbonell Recomendable. All rights reserved. -->
-
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Jared Daniel Recomendable">
+    <title>JDCR</title>
+    <link rel="icon" href="jdcr.png" type="image/x-icon">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Portfolio">
-        <meta name="author" content="Jared Daniel Recomendable">
-        <title>JDCR</title>
-        <link rel="icon" href="jdcr.png" type="image/x-icon">
+    <!-- Include Bootstrap and Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Include Bootstrap and Font Awesome -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Use Google's Open Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-        <!-- Use Google's Open Sans -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <style>
+      body { font-family: "Open Sans", sans-serif; }
+      .body-section { padding-top: 20px; padding-bottom: 20px; color: #222 }
+      .enlarge-section { min-height: 56%; min-height: 56vh; }
+      .anchor-nav { display: block; position: relative; top: -48px; visibility: hidden; }
+      .list-no-bullets { list-style-type: none; padding: 0; }
+      .center-all { display: flex; justify-content: center; align-items: center; }
+      .full-height { min-height: 94%; min-height: 94vh; }
+      .no-outline { outline: none; }
+      .static-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top;
+        background-attachment: fixed;
+        color: white;
+        border-radius: 0;
+      }
+      .bg-intro { background-image: url("bg_outer_space.webp"); }
+      .bg-thoughts { background-image: url("bg_sunset.webp"); }
+      .text-intro { font-size: 4em; }
+      .text-subintro { font-size: 2em; }
+      .text-thoughts { font-family: serif; font-size: 2.4em; min-height: 10em; }
+      .scroll-down-icon-mobile { position: relative; font-size: 3em; }
+      .scroll-down-icon-desktop { position: absolute; bottom: 8px; font-size: 3em; }
+      .smooth-transition { transition: 0.3s; }
+      p { margin-bottom: 2em; }
+    </style>
+  </head>
 
-        <!-- Style -->
-        <style>
-            body { font-family: "Open Sans", sans-serif; }
-            .body-section { padding-top: 20px; padding-bottom: 20px; color: #222 }
-            .enlarge-section { min-height: 56%; min-height: 56vh; }
-            .anchor-nav { display: block; position: relative; top: -48px; visibility: hidden; }
-            .list-no-bullets { list-style-type: none; padding: 0; }
-            .center-all { display: flex; justify-content: center; align-items: center; }
-            .full-height { min-height: 94%; min-height: 94vh; }
-            .no-outline { outline: none; }
-            .static-bg {
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: right top;
-                background-attachment: fixed;
-                color: white;
-                border-radius: 0;
-            }
-            .bg-intro { background-image: url("bg_outer_space.webp"); }
-            .bg-thoughts { background-image: url("bg_sunset.webp"); }
-            .text-intro { font-size: 4em; }
-            .text-subintro { font-size: 2em; }
-            .text-thoughts { font-family: serif; font-size: 2.4em; min-height: 10em; }
-            .scroll-down-icon-mobile { position: relative; font-size: 3em; }
-            .scroll-down-icon-desktop { position: absolute; bottom: 8px; font-size: 3em; }
-            .smooth-transition { transition: 0.3s; }
-            p { margin-bottom: 2em; }
-        </style>
-    </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="10">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand no-outline" href="#top"><img id="header-logo" width="32" src="jdcr.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="10">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand no-outline" href="#top"><img id="header-logo" width="32" src="jdcr.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#my-purpose">My Purpose</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#work">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#achievements">Achievements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#thoughts">Thoughts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link no-outline smooth-transition" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#my-purpose">My Purpose</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#work">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#achievements">Achievements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#hobbies">Hobbies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#thoughts">Thoughts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link no-outline smooth-transition" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <main role="main">
-            <a id="top" class="anchor-nav"></a>
-            <div class="jumbotron center-all full-height bg-intro static-bg m-0">
-                <div class="text-center">
-                    <span class="text-intro font-weight-bolder"><strong>Hi.</strong></span>
-                    <br>
-                    <span class="text-subintro font-weight-bolder"><strong>I'm Jared Daniel Recomendable.</strong></span>
-                    <br><br>
-                    <h3>I'm a student.</h3>
-                    <br><br><br>
-                    <a class="scroll-down-icon-mobile no-outline d-block d-md-none" href="#my-purpose">
-                        <i class="fa fa-chevron-down text-white"></i>
-                    </a>
-                </div>
-                <a class="scroll-down-icon-desktop no-outline d-none d-md-block" href="#my-purpose">
-                    <i class="fa fa-chevron-down text-white"></i>
-                </a>
-            </div>
-
-            <a id="my-purpose" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-dark text-light enlarge-section center-all">
-                <div class="row">
-                    <div class="d-none d-sm-block col-sm-4 col-lg-3 offset-lg-1">
-                        <img id="header-logo" width="64%" src="jdcr.png">
-                    </div>
-                    <div class="text-center text-sm-left col-sm-8 col-lg-7">
-                        <h3>My Purpose</h3>
-                        <br>
-                        <p>My goal in life is to work hard now to achieve success in my future endeavours. I believe
-                            that the youths among us should begin honing our skills at an early age to prepare
-                            ourselves for the Twenty-First Century and show the generation before us that they have
-                            taught us well to lead and to succeed.<br><br><strong>We should always strive to
-                            thrive!</strong></p>
-                    </div>
-                </div>
-            </div>
-
-            <a id="work" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-light">
-                <div class="row">
-                    <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
-                        <h3>Work Experience</h3>
-                    </div>
-                    <div class="col-sm-8 col-lg-7 text-left">
-                        <ul class="text-left list-no-bullets">
-                            <li><strong>Research Assistant</strong><br /><strong>University of Auckland</strong> | May 2022 &ndash; Present</li>
-                                <ul>
-                                    <li>Building a parallelised code style marking tool that checks the code style
-                                        and formatting of C++ repositories for a Mechanical Engineering course at
-                                        the University of Auckland, according to the Google C++ Style Guide.
-                                        Resulted in cutting down marking time from 40 hours to two minutes per
-                                        assignment.</li>
-                                    <li>Building a code-generating tool that uses program synthesis, evolutionary
-                                        algorithms and fitness computation techniques to generate Java code from
-                                        natural language input.</li>
-                                </ul>
-                            <li><strong>Teaching Assistant</strong><br /><strong>University of Auckland</strong> | Mar 2022 &ndash; Present</li>
-                            <ul>
-                                <li>Assists teaching staff in the conducting of labs, vetting and marking of
-                                    assignments for the courses SOFTENG 206, SOFTENG 283 and SOFTENG 364 at the
-                                    University of Auckland.  Previously did so for SOFTENG 281 and COMPSYS 201.</li>
-                                <li>Answers student queries posted to Q&A forums used for the respective courses.</li>
-                            </ul>
-                            <li><strong>Part-Time Software Developer</strong><br /><strong>Windcave Ltd</strong> | Jun 2022 &ndash; Present</li>
-                            <ul>
-                                <li>Working on the modernisation of client-facing JavaScript libraries for use in e-commerce integrations.</li>
-                                <li>Creating two new e-commerce products for allowing the entry of payment information without requiring SAQ-D compliance from merchants.</li>
-                            </ul>
-                            <li><strong>Software Developer Intern</strong><br /><strong>Windcave Ltd</strong> | Nov 2021 &ndash; Mar 2022</li>
-                            <ul>
-                                <li>Designed and implemented a self-test platform for automating the compliance testing of backend components that support e-commerce payments.</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <a id="education" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-white">
-                <div class="row">
-                    <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
-                        <h3>Education</h3>
-                    </div>
-                    <div class="col-sm-8 col-lg-7 text-left">
-                        <ul class="text-left list-no-bullets">
-                            <li><strong>University of Auckland (2020 &ndash; Present)</strong></li>
-                                <ul><li>Bachelor of Engineering (Honours) in Software</li></ul>
-                            <li><strong>Avondale College, Auckland (2019)</strong></li>
-                            <li><strong>Yishun Junior College, Singapore (2018 &ndash; 2019)</strong></li>
-                            <li><strong>Yishun Town Secondary School, Singapore (2014 &ndash; 2017)</strong></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <a id="achievements" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-light">
-                <div class="row">
-                    <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
-                        <h3>Achievements</h3>
-                    </div>
-                    <div class="col-sm-8 col-lg-7 text-left">
-                        <ul class="text-left list-no-bullets">
-                            <li><strong>Robogals x KPMG Hackathon (2023)</strong></li>
-                            <ul>
-                                <li>Toastmaster's (Best Presenter) Award</li>
-                            </ul>
-
-                            <li><strong>University of Auckland Prizes and Scholarships (2022)</strong></li>
-                            <ul>
-                                <li>Colombo Plan Scholarship</li>
-                            </ul>
-
-                            <li><strong>WDCCxSESA Hackathon 2022</strong></li>
-                            <ul>
-                                <li>3rd Place</li>
-                            </ul>
-
-                            <li><strong>University of Auckland Prizes and Scholarships (2021)</strong></li>
-                            <ul>
-                                <li>First in Course Award in SOFTENG 206 - Semester Two 2021</li>
-                            </ul>
-
-                            <li><strong>University of Auckland Prizes and Scholarships (2020)</strong></li>
-                            <ul>
-                                <li>Faculty of Engineering Student Support Award</li>
-                                <li>First in Course Award in ENGGEN 121 - Semester One 2020</li>
-                            </ul>
-
-                            <li><strong>New Zealand Qualifications Authority (NZQA) Scholarship (2019)</strong></li>
-                            <ul>
-                                <li>Scholarship in Calculus</li>
-                                <li>Scholarship in Physics</li>
-                            </ul>
-
-                            <li><strong>Avondale College, Auckland, Senior Prize Giving Ceremony 2019</strong></li>
-                            <ul>
-                                <li>1st in Mathematics (Statistics)</li>
-                                <li>1st in Physics</li>
-                                <li>1st in Technology - Innovation Programme</li>
-                            </ul>
-
-                            <li><strong>Nanyang Technological University (NTU) School of Computer Science and Engineering (SCSE) Computing Challenge</strong> (2019)</li>
-                            <ul><li>Honourable Mention</li></ul>
-
-                            <li><strong>Ace of Coders, National University of Singapore</strong> (2018)</li>
-                            <ul><li>Silver</li></ul>
-
-                            <li><strong>#startathon Junior</strong> (2018)</li>
-                            <ul><li>Silver</li></ul>
-
-                            <li><strong>Bebras Challenge</strong> (2018)</li>
-                            <ul><li>Silver</li></ul>
-
-                            <li><strong>Texas Instruments Graphing Calculator Competition</strong> (2016)</li>
-                            <ul><li>Bronze</li></ul>
-
-                            <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics</strong> (2015)</li>
-                            <ul><li>High Distinction</li></ul>
-
-                            <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Science</strong> (2015)</li>
-                            <ul><li>Distinction</li></ul>
-
-                            <li><strong>CoSpace Rescue (Pei Hwa) Challenge</strong> (2014, 2015)</li>
-                            <ul><li>2nd Runner Up</li></ul>
-
-                            <li><strong>National Junior Robotics Competition</strong> (2014)</li>
-                            <ul><li>Merit</li></ul>
-
-                            <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics</strong> (2013)</li>
-                            <ul><li>Distinction</li></ul>
-
-                            <li><strong>And the following experiences...</strong></li>
-                            <ul>
-                                <li>DEVS Hackathon (2022)</li>
-                                <li>National Olympiad in Informatics Preliminaries (2019)</li>
-                                <li>National University of Singapore (NUS) Business Analytics Case Competition (2019)</li>
-                                <li>Code:XtremeApps::2018</li>
-                                <li>C.B. Paul Science Quiz (2017)</li>
-                                <li>National Science Challenge (2016, Brief Appearance on Singapore TV Channel Okto)</li>
-                                <li>National Junior Robotics Competition (2015, 2016)</li>
-                                <li>Singapore Games Creation Competition (2014)</li>
-                            </ul>
-                            <li>and more to come!</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <a id="hobbies" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-white">
-                <div class="row">
-                    <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
-                        <h3>Hobbies</h3>
-                    </div>
-                    <div class="col-sm-8 col-lg-7 text-left">
-                        <h4 class="text-uppercase font-weight-bolder"><strong><u>Computer Programming</u></strong></h4>
-                        <p>Indulging in code helps me to destress in life. I find quickly forming algorithms on my head
-                            to be a fun and relaxing experience, and enables me to improve on my logical and analytical
-                            thinking skills.</p>
-                        <h5 class="text-uppercase"><strong>Projects and Activities</strong></h5>
-                        <ul class="text-left list-no-bullets">
-                            <li><strong><a href="https://github.com/JDCRecomendable/jdcr-discord-utils" target="_blank">JDCR Discord Utils</a></strong></li>
-                            <p>Wrote a Discord bot for my Discord server. The bot adds unit and base-<em>n</em>
-                                conversion capabilities as well as the ability to quickly retrieve physical
-                                constants to the server. Utilities to retrieve random numbers and jokes are
-                                also included.</p>
-
-                            <li><strong><a href="https://github.com/JDCRecomendable/unit-converter" target="_blank">Unit Converter</a></strong></li>
-                            <p>A software project for Avondale College, Auckland. This simple Mono-based cross-platform
-                                application does what it does: conversion of units. The application allows the
-                                conversion of numerous physical quantities and includes over 300 different units.</p>
-
-                            <li><strong>Competitive Programming Practices at dunJudge.me</strong></li>
-                            <p>Wrote some C++ programs to solve competitive programming questions at dunJudge.me, a
-                                website set up in Singapore meant for users to sharpen their competitive programming
-                                skills and improve their understanding of algorithms, such as sorting algorithms and
-                                Kadane's algorithm.</p>
-
-                            <li><strong>Info TV</strong></li>
-                            <p>An interactive dashboard for personal use that displays one's calendar, news headlines,
-                                weather and stocks for the day. The news headlines, weather and stocks update
-                                periodically, while the calendar shows the user's events for the day. Meant to run on a
-                                Raspberry Pi, this project can be expanded to support small- and medium-sized
-                                organisations, acting as a free and open-source "bulletin board".</p>
-
-                            <li><strong><a href="https://github.com/JDCRecomendable/die-geduld" target="_blank">Die Geduld</a></strong></li>
-                            <p>A game of patience. For each level, the player navigates a maze of obstacles and
-                                monsters. The player has to time the execution of his movement to avoid being hit by
-                                monsters and reach the goal.</p>
-
-                            <li><strong>Clickin' Balls</strong></li>
-                            <p>A simple game that tests the player's reflexes and stamina. The player should click on a
-                                small moving ball on the screen within a time limit, and each time he does so, the
-                                speed of the ball becomes faster and the timer resets. The aim of the game is for the
-                                player to beat his previous high score.</p>
-
-                            <li><strong>Talker</strong></li>
-                            <p>A very simple application that converts typed words into speech using the system's
-                                built-in speech synthesis software. This is my first foray into programming. I was able
-                                to make an Android and a Windows version of this application.</p>
-                        </ul>
-
-                        <h5 class="text-uppercase"><strong>Other Experiences</strong></h5>
-                        <ul class="text-left list-no-bullets">
-                            <li><strong>Setting up an encrypted install of Arch Linux, LVM on LUKS</strong></li>
-                            <p>Did so the "Arch wiki" way. Installing Arch Linux is easy, since <code>pacstrap</code>
-                                does most of the heavy lifting. Currently using the operating system with
-                                <code>i3-gaps</code> as my window manager if I needed to use GUI-based programs.</p>
-
-                            <li><strong>Running a Pi-Hole</strong></li>
-                            <p>This can be treated as a "set-and-forget" setup for blocking DNS queries to advertising,
-                                tracking and malware sites, but I found myself adding at least a blocklist and numerous
-                                regex expressions every day during my first few weeks using the application. The
-                                Pi-Hole can show how much humans have come to accept the invasive tracking of their
-                                activities and movements by data aggregators in this day and age.</p>
-
-                            <li><strong>Database Project at Avondale College, Auckland</strong></li>
-                            <p>Did such a project that involved planning and coding full-stack, i.e. both the back-end
-                                and the web interface, using MySQL/MariaDB, Python 3 and its frameworks including
-                                Flask.
-                            </p>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <a id="thoughts" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-light bg-thoughts text-center static-bg">
-                <h3>Thoughts</h3>
-                <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators pt-2 mt-2">
-                        <li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="1"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="2"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="3"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="4"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="5"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="6"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="7"></li>
-                        <li data-target="#carousel-indicators" data-slide-to="8"></li>
-                    </ol>
-                    <div class="carousel-inner text-thoughts font-italic col-md-8 offset-md-2">
-                        <div class="carousel-item active">
-                            <p>As long as one meets the minimum intelligence required for a job, with effort, he can
-                                outpace his peers of higher intelligence.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>To be as highly productive as possible, one should focus on what he is doing in the
-                                present, not worrying about the future or regretting the past.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>One should not stop achieving if he achieves something. It is easy to be first
-                                initially, but to maintain being as such requires effort and perseverance.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>One should aspire to reach the state of satisfaction, but he should never reach that
-                                level. What this means is that one should always be moving forward and not stop,
-                                because one can always be better.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Celebrating one's successes should be temporary, not permanent.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Likewise, worrying about one's failures should also be short-lived. However, the
-                                corrections from those mistakes should be applied from then onwards.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>There is always a better person than me and I should aspire to reach his level.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Likewise, there is always a person worse off than me whom I should help, and I should
-                                be grateful for what I have.</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p>Success is brought about by a combination of the ability to exploit one's skills and the
-                                ability to exploit what is happening to his surroundings.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <a id="contact" class="anchor-nav"></a>
-            <div class="container-fluid body-section bg-white">
-                <div class="row">
-                    <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
-                        <h3>Contact</h3>
-                    </div>
-                    <div class="col-sm-8 col-lg-7 text-left">
-                        <p>Please bear in mind that while I try to reply to communications within three days, I may
-                            take up to a week depending on my workload.</p>
-                        <ul class="text-left list-no-bullets">
-                            <li><strong>LinkedIn</strong></li>
-                            <ul><li><a href="https://linkedin.com/in/jdcr" target="_blank">https://linkedin.com/in/jdcr</a></li></ul>
-
-                            <li><strong>GitHub</strong></li>
-                            <ul><li><a href="https://github.com/JDCRecomendable" target="_blank">https://github.com/JDCRecomendable</a></li></ul>
-
-                            <li><strong>University of Auckland Profiles</strong></li>
-                            <ul><li><a href="https://profiles.auckland.ac.nz/jrec291" target="_blank">https://profiles.auckland.ac.nz/jrec291</a></li></ul>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <div class="text-center text-light bg-dark pt-2 pb-3">
-            <sub>Copyright &copy; 2019-2021 Jared Daniel Recomendable.</sub>
+    <main role="main">
+      <a id="top" class="anchor-nav"></a>
+      <div class="jumbotron center-all full-height bg-intro static-bg m-0">
+        <div class="text-center">
+          <span class="text-intro font-weight-bolder"><strong>Hi.</strong></span>
+          <br>
+          <span class="text-subintro font-weight-bolder"><strong>I'm Jared Daniel Recomendable.</strong></span>
+          <br><br>
+          <h3>I'm a student.</h3>
+          <br><br><br>
+          <a class="scroll-down-icon-mobile no-outline d-block d-md-none" href="#my-purpose">
+            <i class="fa fa-chevron-down text-white"></i>
+          </a>
         </div>
+        <a class="scroll-down-icon-desktop no-outline d-none d-md-block" href="#my-purpose">
+          <i class="fa fa-chevron-down text-white"></i>
+        </a>
+      </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script>
-            document.querySelectorAll('a.navbar-brand, a.nav-link, a.scroll-down-icon-mobile, a.scroll-down-icon-desktop').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
+      <a id="my-purpose" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-dark text-light enlarge-section center-all">
+        <div class="row">
+          <div class="d-none d-sm-block col-sm-4 col-lg-3 offset-lg-1">
+            <img id="header-logo" width="64%" src="jdcr.png">
+          </div>
+          <div class="text-center text-sm-left col-sm-8 col-lg-7">
+            <h3>My Purpose</h3>
+            <br>
+            <p>My goal in life is to work hard now to achieve success in my future endeavours. I believe
+              that the youths among us should begin honing our skills at an early age to prepare
+              ourselves for the Twenty-First Century and show the generation before us that they have
+              taught us well to lead and to succeed.<br><br><strong>We should always strive to
+              thrive!</strong></p>
+          </div>
+        </div>
+      </div>
 
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script>
-    </body>
+      <a id="work" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-light">
+        <div class="row">
+          <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
+            <h3>Work Experience</h3>
+          </div>
+          <div class="col-sm-8 col-lg-7 text-left">
+            <ul class="text-left list-no-bullets">
+              <li><strong>Research Assistant</strong><br /><strong>University of Auckland</strong> | May 2022 &ndash; Present</li>
+                <ul>
+                  <li>Building a parallelised code style marking tool that checks the code style
+                    and formatting of C++ repositories for a Mechanical Engineering course at
+                    the University of Auckland, according to the Google C++ Style Guide.
+                    Resulted in cutting down marking time from 40 hours to two minutes per
+                    assignment.</li>
+                  <li>Building a code-generating tool that uses program synthesis, evolutionary
+                    algorithms and fitness computation techniques to generate Java code from
+                    natural language input.</li>
+                </ul>
+              <li><strong>Teaching Assistant</strong><br /><strong>University of Auckland</strong> | Mar 2022 &ndash; Present</li>
+              <ul>
+                <li>Assists teaching staff in the conducting of labs, vetting and marking of
+                  assignments for the courses SOFTENG 206, SOFTENG 283 and SOFTENG 364 at the
+                  University of Auckland.  Previously did so for SOFTENG 281 and COMPSYS 201.</li>
+                <li>Answers student queries posted to Q&A forums used for the respective courses.</li>
+              </ul>
+              <li><strong>Part-Time Software Developer</strong><br /><strong>Windcave Ltd</strong> | Jun 2022 &ndash; Present</li>
+              <ul>
+                <li>Working on the modernisation of client-facing JavaScript libraries for use in e-commerce integrations.</li>
+                <li>Creating two new e-commerce products for allowing the entry of payment information without requiring SAQ-D compliance from merchants.</li>
+              </ul>
+              <li><strong>Software Developer Intern</strong><br /><strong>Windcave Ltd</strong> | Nov 2021 &ndash; Mar 2022</li>
+              <ul>
+                <li>Designed and implemented a self-test platform for automating the compliance testing of backend components that support e-commerce payments.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <a id="education" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-white">
+        <div class="row">
+          <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
+            <h3>Education</h3>
+          </div>
+          <div class="col-sm-8 col-lg-7 text-left">
+            <ul class="text-left list-no-bullets">
+              <li><strong>University of Auckland (2020 &ndash; Present)</strong></li>
+                <ul><li>Bachelor of Engineering (Honours) in Software</li></ul>
+              <li><strong>Avondale College, Auckland (2019)</strong></li>
+              <li><strong>Yishun Junior College, Singapore (2018 &ndash; 2019)</strong></li>
+              <li><strong>Yishun Town Secondary School, Singapore (2014 &ndash; 2017)</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a id="achievements" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-light">
+        <div class="row">
+          <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
+            <h3>Achievements</h3>
+          </div>
+          <div class="col-sm-8 col-lg-7 text-left">
+            <ul class="text-left list-no-bullets">
+              <li><strong>Robogals x KPMG Hackathon (2023)</strong></li>
+              <ul>
+                <li>Toastmaster's (Best Presenter) Award</li>
+              </ul>
+
+              <li><strong>University of Auckland Prizes and Scholarships (2022)</strong></li>
+              <ul>
+                <li>Colombo Plan Scholarship</li>
+              </ul>
+
+              <li><strong>WDCCxSESA Hackathon 2022</strong></li>
+              <ul>
+                <li>3rd Place</li>
+              </ul>
+
+              <li><strong>University of Auckland Prizes and Scholarships (2021)</strong></li>
+              <ul>
+                <li>First in Course Award in SOFTENG 206 - Semester Two 2021</li>
+              </ul>
+
+              <li><strong>University of Auckland Prizes and Scholarships (2020)</strong></li>
+              <ul>
+                <li>Faculty of Engineering Student Support Award</li>
+                <li>First in Course Award in ENGGEN 121 - Semester One 2020</li>
+              </ul>
+
+              <li><strong>New Zealand Qualifications Authority (NZQA) Scholarship (2019)</strong></li>
+              <ul>
+                <li>Scholarship in Calculus</li>
+                <li>Scholarship in Physics</li>
+              </ul>
+
+              <li><strong>Avondale College, Auckland, Senior Prize Giving Ceremony 2019</strong></li>
+              <ul>
+                <li>1st in Mathematics (Statistics)</li>
+                <li>1st in Physics</li>
+                <li>1st in Technology - Innovation Programme</li>
+              </ul>
+
+              <li><strong>Nanyang Technological University (NTU) School of Computer Science and Engineering (SCSE) Computing Challenge</strong> (2019)</li>
+              <ul><li>Honourable Mention</li></ul>
+
+              <li><strong>Ace of Coders, National University of Singapore</strong> (2018)</li>
+              <ul><li>Silver</li></ul>
+
+              <li><strong>#startathon Junior</strong> (2018)</li>
+              <ul><li>Silver</li></ul>
+
+              <li><strong>Bebras Challenge</strong> (2018)</li>
+              <ul><li>Silver</li></ul>
+
+              <li><strong>Texas Instruments Graphing Calculator Competition</strong> (2016)</li>
+              <ul><li>Bronze</li></ul>
+
+              <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics</strong> (2015)</li>
+              <ul><li>High Distinction</li></ul>
+
+              <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Science</strong> (2015)</li>
+              <ul><li>Distinction</li></ul>
+
+              <li><strong>CoSpace Rescue (Pei Hwa) Challenge</strong> (2014, 2015)</li>
+              <ul><li>2nd Runner Up</li></ul>
+
+              <li><strong>National Junior Robotics Competition</strong> (2014)</li>
+              <ul><li>Merit</li></ul>
+
+              <li><strong>University of New South Wales (UNSW) International Competitions and Assessments for Schools (ICAS) Mathematics</strong> (2013)</li>
+              <ul><li>Distinction</li></ul>
+
+              <li><strong>And the following experiences...</strong></li>
+              <ul>
+                <li>DEVS Hackathon (2022)</li>
+                <li>National Olympiad in Informatics Preliminaries (2019)</li>
+                <li>National University of Singapore (NUS) Business Analytics Case Competition (2019)</li>
+                <li>Code:XtremeApps::2018</li>
+                <li>C.B. Paul Science Quiz (2017)</li>
+                <li>National Science Challenge (2016, Brief Appearance on Singapore TV Channel Okto)</li>
+                <li>National Junior Robotics Competition (2015, 2016)</li>
+                <li>Singapore Games Creation Competition (2014)</li>
+              </ul>
+              <li>and more to come!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a id="hobbies" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-white">
+        <div class="row">
+          <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
+            <h3>Hobbies</h3>
+          </div>
+          <div class="col-sm-8 col-lg-7 text-left">
+            <h4 class="text-uppercase font-weight-bolder"><strong><u>Computer Programming</u></strong></h4>
+            <p>Indulging in code helps me to destress in life. I find quickly forming algorithms on my head
+              to be a fun and relaxing experience, and enables me to improve on my logical and analytical
+              thinking skills.</p>
+            <h5 class="text-uppercase"><strong>Projects and Activities</strong></h5>
+            <ul class="text-left list-no-bullets">
+              <li><strong><a href="https://github.com/JDCRecomendable/jdcr-discord-utils" target="_blank">JDCR Discord Utils</a></strong></li>
+              <p>Wrote a Discord bot for my Discord server. The bot adds unit and base-<em>n</em>
+                conversion capabilities as well as the ability to quickly retrieve physical
+                constants to the server. Utilities to retrieve random numbers and jokes are
+                also included.</p>
+
+              <li><strong><a href="https://github.com/JDCRecomendable/unit-converter" target="_blank">Unit Converter</a></strong></li>
+              <p>A software project for Avondale College, Auckland. This simple Mono-based cross-platform
+                application does what it does: conversion of units. The application allows the
+                conversion of numerous physical quantities and includes over 300 different units.</p>
+
+              <li><strong>Competitive Programming Practices at dunJudge.me</strong></li>
+              <p>Wrote some C++ programs to solve competitive programming questions at dunJudge.me, a
+                website set up in Singapore meant for users to sharpen their competitive programming
+                skills and improve their understanding of algorithms, such as sorting algorithms and
+                Kadane's algorithm.</p>
+
+              <li><strong>Info TV</strong></li>
+              <p>An interactive dashboard for personal use that displays one's calendar, news headlines,
+                weather and stocks for the day. The news headlines, weather and stocks update
+                periodically, while the calendar shows the user's events for the day. Meant to run on a
+                Raspberry Pi, this project can be expanded to support small- and medium-sized
+                organisations, acting as a free and open-source "bulletin board".</p>
+
+              <li><strong><a href="https://github.com/JDCRecomendable/die-geduld" target="_blank">Die Geduld</a></strong></li>
+              <p>A game of patience. For each level, the player navigates a maze of obstacles and
+                monsters. The player has to time the execution of his movement to avoid being hit by
+                monsters and reach the goal.</p>
+
+              <li><strong>Clickin' Balls</strong></li>
+              <p>A simple game that tests the player's reflexes and stamina. The player should click on a
+                small moving ball on the screen within a time limit, and each time he does so, the
+                speed of the ball becomes faster and the timer resets. The aim of the game is for the
+                player to beat his previous high score.</p>
+
+              <li><strong>Talker</strong></li>
+              <p>A very simple application that converts typed words into speech using the system's
+                built-in speech synthesis software. This is my first foray into programming. I was able
+                to make an Android and a Windows version of this application.</p>
+            </ul>
+
+            <h5 class="text-uppercase"><strong>Other Experiences</strong></h5>
+            <ul class="text-left list-no-bullets">
+              <li><strong>Setting up an encrypted install of Arch Linux, LVM on LUKS</strong></li>
+              <p>Did so the "Arch wiki" way. Installing Arch Linux is easy, since <code>pacstrap</code>
+                does most of the heavy lifting. Currently using the operating system with
+                <code>i3-gaps</code> as my window manager if I needed to use GUI-based programs.</p>
+
+              <li><strong>Running a Pi-Hole</strong></li>
+              <p>This can be treated as a "set-and-forget" setup for blocking DNS queries to advertising,
+                tracking and malware sites, but I found myself adding at least a blocklist and numerous
+                regex expressions every day during my first few weeks using the application. The
+                Pi-Hole can show how much humans have come to accept the invasive tracking of their
+                activities and movements by data aggregators in this day and age.</p>
+
+              <li><strong>Database Project at Avondale College, Auckland</strong></li>
+              <p>Did such a project that involved planning and coding full-stack, i.e. both the back-end
+                and the web interface, using MySQL/MariaDB, Python 3 and its frameworks including
+                Flask.
+              </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a id="thoughts" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-light bg-thoughts text-center static-bg">
+        <h3>Thoughts</h3>
+        <div id="carousel-indicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators pt-2 mt-2">
+            <li data-target="#carousel-indicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-indicators" data-slide-to="1"></li>
+            <li data-target="#carousel-indicators" data-slide-to="2"></li>
+            <li data-target="#carousel-indicators" data-slide-to="3"></li>
+            <li data-target="#carousel-indicators" data-slide-to="4"></li>
+            <li data-target="#carousel-indicators" data-slide-to="5"></li>
+            <li data-target="#carousel-indicators" data-slide-to="6"></li>
+            <li data-target="#carousel-indicators" data-slide-to="7"></li>
+            <li data-target="#carousel-indicators" data-slide-to="8"></li>
+          </ol>
+          <div class="carousel-inner text-thoughts font-italic col-md-8 offset-md-2">
+            <div class="carousel-item active">
+              <p>As long as one meets the minimum intelligence required for a job, with effort, he can
+                outpace his peers of higher intelligence.</p>
+            </div>
+            <div class="carousel-item">
+              <p>To be as highly productive as possible, one should focus on what he is doing in the
+                present, not worrying about the future or regretting the past.</p>
+            </div>
+            <div class="carousel-item">
+              <p>One should not stop achieving if he achieves something. It is easy to be first
+                initially, but to maintain being as such requires effort and perseverance.</p>
+            </div>
+            <div class="carousel-item">
+              <p>One should aspire to reach the state of satisfaction, but he should never reach that
+                level. What this means is that one should always be moving forward and not stop,
+                because one can always be better.</p>
+            </div>
+            <div class="carousel-item">
+              <p>Celebrating one's successes should be temporary, not permanent.</p>
+            </div>
+            <div class="carousel-item">
+              <p>Likewise, worrying about one's failures should also be short-lived. However, the
+                corrections from those mistakes should be applied from then onwards.</p>
+            </div>
+            <div class="carousel-item">
+              <p>There is always a better person than me and I should aspire to reach his level.</p>
+            </div>
+            <div class="carousel-item">
+              <p>Likewise, there is always a person worse off than me whom I should help, and I should
+                be grateful for what I have.</p>
+            </div>
+            <div class="carousel-item">
+              <p>Success is brought about by a combination of the ability to exploit one's skills and the
+                ability to exploit what is happening to his surroundings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a id="contact" class="anchor-nav"></a>
+      <div class="container-fluid body-section bg-white">
+        <div class="row">
+          <div class="text-center text-sm-left col-sm-4 col-lg-3 offset-lg-1">
+            <h3>Contact</h3>
+          </div>
+          <div class="col-sm-8 col-lg-7 text-left">
+            <p>Please bear in mind that while I try to reply to communications within three days, I may
+              take up to a week depending on my workload.</p>
+            <ul class="text-left list-no-bullets">
+              <li><strong>LinkedIn</strong></li>
+              <ul><li><a href="https://linkedin.com/in/jdcr" target="_blank">https://linkedin.com/in/jdcr</a></li></ul>
+
+              <li><strong>GitHub</strong></li>
+              <ul><li><a href="https://github.com/JDCRecomendable" target="_blank">https://github.com/JDCRecomendable</a></li></ul>
+
+              <li><strong>University of Auckland Profiles</strong></li>
+              <ul><li><a href="https://profiles.auckland.ac.nz/jrec291" target="_blank">https://profiles.auckland.ac.nz/jrec291</a></li></ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="text-center text-light bg-dark pt-2 pb-3">
+      <sub>Copyright &copy; 2019-2021 Jared Daniel Recomendable.</sub>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      document.querySelectorAll('a.navbar-brand, a.nav-link, a.scroll-down-icon-mobile, a.scroll-down-icon-desktop').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
